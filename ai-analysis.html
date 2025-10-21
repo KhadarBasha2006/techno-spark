@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Analysis - Techno Spark</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/logo.png" alt="Techno Spark" class="sidebar-logo">
+            <span>Techno Spark</span>
+        </div>
+        
+        <div class="sidebar-menu">
+            <a href="dashboard.html" class="menu-item">
+                <span class="icon">📊</span>
+                Dashboard
+            </a>
+            <a href="profile.html" class="menu-item">
+                <span class="icon">👤</span>
+                Profile
+            </a>
+            <a href="ai-analysis.html" class="menu-item active">
+                <span class="icon">🧠</span>
+                AI Analysis
+            </a>
+            <a href="business-plan.html" class="menu-item">
+                <span class="icon">📈</span>
+                Business Plan
+            </a>
+            <a href="market-research.html" class="menu-item">
+                <span class="icon">🎯</span>
+                Market Research
+            </a>
+            <a href="projects.html" class="menu-item">
+                <span class="icon">💼</span>
+                Projects
+            </a>
+        </div>
+        
+        <div class="sidebar-footer">
+            <a href="#" class="menu-item logout">
+                <span class="icon">🚪</span>
+                Logout
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="dashboard-header">
+            <div class="header-left">
+                <h1>AI Business Analysis <span class="ai-emoji">🧠</span></h1>
+                <p>Get instant AI-powered insights for your business</p>
+            </div>
+        </header>
+
+        <!-- Analysis Types -->
+        <section class="analysis-section">
+            <div class="analysis-grid">
+                <div class="analysis-card" data-analysis="idea">
+                    <div class="analysis-icon">💡</div>
+                    <h3>Idea Validation</h3>
+                    <p>Validate your business idea with AI-powered market analysis</p>
+                    <div class="analysis-features">
+                        <span>Market Size Analysis</span>
+                        <span>Competition Research</span>
+                        <span>Feasibility Score</span>
+                    </div>
+                    <button class="btn btn-primary btn-full">Start Analysis</button>
+                </div>
+
+                <div class="analysis-card" data-analysis="business-model">
+                    <div class="analysis-icon">🏢</div>
+                    <h3>Business Model</h3>
+                    <p>Analyze and optimize your business model canvas</p>
+                    <div class="analysis-features">
+                        <span>Revenue Streams</span>
+                        <span>Cost Structure</span>
+                        <span>Value Proposition</span>
+                    </div>
+                    <button class="btn btn-primary btn-full">Start Analysis</button>
+                </div>
+
+                <div class="analysis-card" data-analysis="financial">
+                    <div class="analysis-icon">💰</div>
+                    <h3>Financial Projections</h3>
+                    <p>Generate accurate financial forecasts and projections</p>
+                    <div class="analysis-features">
+                        <span>Revenue Forecast</span>
+                        <span>Expense Analysis</span>
+                        <span>Break-even Point</span>
+                    </div>
+                    <button class="btn btn-primary btn-full">Start Analysis</button>
+                </div>
+
+                <div class="analysis-card" data-analysis="market">
+                    <div class="analysis-icon">🎯</div>
+                    <h3>Market Analysis</h3>
+                    <p>Deep dive into your target market and customer segments</p>
+                    <div class="analysis-features">
+                        <span>Target Audience</span>
+                        <span>Market Trends</span>
+                        <span>Growth Potential</span>
+                    </div>
+                    <button class="btn btn-primary btn-full">Start Analysis</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Analysis Form -->
+        <section class="quick-analysis-section">
+            <div class="analysis-form-container">
+                <h2>Quick Business Analysis</h2>
+                <form id="quickAnalysisForm" class="analysis-form">
+                    <div class="form-group">
+                        <label>Describe Your Business Idea</label>
+                        <textarea id="businessIdea" placeholder="Describe your business idea in detail..." rows="4"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Target Market</label>
+                            <input type="text" id="analysisMarket" placeholder="Who are your target customers?">
+                        </div>
+                        <div class="form-group">
+                            <label>Key Differentiator</label>
+                            <input type="text" id="differentiator" placeholder="What makes you unique?">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="revenueModel">Revenue Model</label>
+                        <select id="revenueModel">
+                            <option value="">Select Revenue Model</option>
+                            <option value="subscription">Subscription</option>
+                            <option value="transaction">Transaction Fees</option>
+                            <option value="ads">Advertising</option>
+                            <option value="product">Product Sales</option>
+                            <option value="service">Service Fees</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <span class="loading-spinner" style="display: none;">⏳</span>
+                        Analyze My Business
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Recent Analyses -->
+        <section class="recent-analyses">
+            <h2>Recent Analyses</h2>
+            <div class="analyses-list">
+                <div class="analysis-item">
+                    <div class="analysis-header">
+                        <h4>Eco-Friendly Packaging Solution</h4>
+                        <span class="analysis-score score-high">82%</span>
+                    </div>
+                    <p>Market analysis for sustainable packaging business</p>
+                    <div class="analysis-meta">
+                        <span>Completed: 2 days ago</span>
+                        <span>Type: Market Analysis</span>
+                    </div>
+                </div>
+
+                <div class="analysis-item">
+                    <div class="analysis-header">
+                        <h4>AI-Powered Fitness App</h4>
+                        <span class="analysis-score score-medium">65%</span>
+                    </div>
+                    <p>Business model validation for fitness technology</p>
+                    <div class="analysis-meta">
+                        <span>Completed: 1 week ago</span>
+                        <span>Type: Idea Validation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/ai-analysis.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Plan - Techno Spark</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/logo.png" alt="Techno Spark" class="sidebar-logo">
+            <span>Techno Spark</span>
+        </div>
+        
+        <div class="sidebar-menu">
+            <a href="dashboard.html" class="menu-item">
+                <span class="icon">📊</span>
+                Dashboard
+            </a>
+            <a href="profile.html" class="menu-item">
+                <span class="icon">👤</span>
+                Profile
+            </a>
+            <a href="ai-analysis.html" class="menu-item">
+                <span class="icon">🧠</span>
+                AI Analysis
+            </a>
+            <a href="business-plan.html" class="menu-item active">
+                <span class="icon">📈</span>
+                Business Plan
+            </a>
+            <a href="market-research.html" class="menu-item">
+                <span class="icon">🎯</span>
+                Market Research
+            </a>
+        </div>
+        
+        <div class="sidebar-footer">
+            <a href="#" class="menu-item logout">
+                <span class="icon">🚪</span>
+                Logout
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="dashboard-header">
+            <div class="header-left">
+                <h1>Business Plan Builder <span class="plan-emoji">📈</span></h1>
+                <p>Create a comprehensive business plan with AI assistance</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-primary" id="generatePlan">
+                    <span class="icon">✨</span>
+                    Generate AI Plan
+                </button>
+            </div>
+        </header>
+
+        <!-- Plan Progress -->
+        <section class="plan-progress">
+            <div class="progress-steps">
+                <div class="step active">
+                    <div class="step-number">1</div>
+                    <span>Executive Summary</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <span>Market Analysis</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <span>Organization</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <span>Products/Services</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <span>Marketing & Sales</span>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <span>Financial Projections</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Plan Form -->
+        <section class="business-plan-form">
+            <form id="businessPlanForm">
+                <!-- Executive Summary -->
+                <div class="plan-section active" id="section-executive">
+                    <h2>Executive Summary</h2>
+                    <div class="form-group">
+                        <label>Business Name</label>
+                        <input type="text" id="planBusinessName" placeholder="Enter your business name">
+                    </div>
+                    <div class="form-group">
+                        <label>Mission Statement</label>
+                        <textarea id="missionStatement" placeholder="Describe your business mission..." rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Business Description</label>
+                        <textarea id="businessDescription" placeholder="Describe your business in detail..." rows="5"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="businessType">Business Type</label>
+                            <select id="businessType">
+                                <option value="">Select Business Type</option>
+                                <option value="startup">Startup</option>
+                                <option value="small">Small Business</option>
+                                <option value="online">Online Business</option>
+                                <option value="service">Service Business</option>
+                                <option value="product">Product Business</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Funding Sought</label>
+                            <input type="text" id="fundingSought" placeholder="Amount of funding required">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More sections would continue here... -->
+            </form>
+        </section>
+
+        <!-- Plan Preview -->
+        <section class="plan-preview">
+            <h2>Plan Preview</h2>
+            <div class="preview-container">
+                <div class="preview-section">
+                    <h3>Executive Summary</h3>
+                    <div class="preview-content" id="executivePreview">
+                        <p class="placeholder">Your executive summary will appear here...</p>
+                    </div>
+                </div>
+                
+                <div class="preview-section">
+                    <h3>Key Metrics</h3>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <span class="metric-value" id="marketSize">-</span>
+                            <span class="metric-label">Market Size</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-value" id="growthPotential">-</span>
+                            <span class="metric-label">Growth Potential</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-value" id="competitionLevel">-</span>
+                            <span class="metric-label">Competition Level</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-value" id="riskLevel">-</span>
+                            <span class="metric-label">Risk Level</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Buttons -->
+        <div class="plan-actions">
+            <button class="btn btn-secondary" id="prevSection">Previous</button>
+            <button class="btn btn-primary" id="nextSection">Next Section</button>
+            <button class="btn btn-success" id="downloadPlan" style="display: none;">
+                <span class="icon">📥</span>
+                Download Business Plan
+            </button>
+        </div>
+    </main>
+
+    <script src="js/business-plan.js"></script>
+</body>
+</html>

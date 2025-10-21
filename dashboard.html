@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Techno Spark</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/logo.png" alt="Techno Spark" class="sidebar-logo">
+            <span>Techno Spark</span>
+        </div>
+        
+        <div class="sidebar-menu">
+            <a href="dashboard.html" class="menu-item active">
+                <span class="icon">📊</span>
+                Dashboard
+            </a>
+            <a href="profile.html" class="menu-item">
+                <span class="icon">👤</span>
+                Profile
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">🧠</span>
+                AI Analysis
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">📈</span>
+                Business Plan
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">🎯</span>
+                Market Research
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">💼</span>
+                Projects
+            </a>
+        </div>
+        
+        <div class="sidebar-footer">
+            <a href="#" class="menu-item logout">
+                <span class="icon">🚪</span>
+                Logout
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="dashboard-header">
+            <div class="header-left">
+                <h1>Welcome back, <span id="userName">Founder</span>! 👋</h1>
+                <p>Ready to build your next success story?</p>
+            </div>
+            <div class="header-right">
+                <div class="user-menu">
+                    <img src="assets/default-avatar.png" alt="Profile" class="user-avatar">
+                    <span class="user-name">Founder</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Stats -->
+        <section class="dashboard-stats">
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div class="stat-info">
+                    <h3>Business Score</h3>
+                    <span class="stat-value">78%</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-info">
+                    <h3>Validations</h3>
+                    <span class="stat-value">12/15</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">💡</div>
+                <div class="stat-info">
+                    <h3>AI Insights</h3>
+                    <span class="stat-value">47</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">🚀</div>
+                <div class="stat-info">
+                    <h3>Progress</h3>
+                    <span class="stat-value">65%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+            <h2>Quick Actions</h2>
+            <div class="action-grid">
+                <div class="action-card">
+                    <div class="action-icon">🧠</div>
+                    <h3>AI Business Analysis</h3>
+                    <p>Get instant feedback on your business model</p>
+                    <button class="btn btn-primary">Start Analysis</button>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">📈</div>
+                    <h3>Market Research</h3>
+                    <p>Explore your target market and competition</p>
+                    <button class="btn btn-primary">Research Market</button>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">💼</div>
+                    <h3>Business Plan</h3>
+                    <p>Create a comprehensive business plan</p>
+                    <button class="btn btn-primary">Build Plan</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
